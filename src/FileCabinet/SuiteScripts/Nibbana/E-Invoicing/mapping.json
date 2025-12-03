@@ -1,0 +1,66 @@
+
+<#ftl ns_prefixes={
+"rsm": "urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100",
+"ram": "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100",
+"udt": "urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100",
+"qdt": "urn:un:unece:uncefact:data:standard:QualifiedDataType:100"
+}>
+
+<#-- Helper function to format date from YYYYMMDD to D/M/YYYY -->
+<#function formatDate dateString>
+    <#if dateString?has_content && dateString?length == 8>
+        <#assign year = dateString?substring(0, 4)>
+        <#assign month = dateString?substring(4, 6)?number>
+        <#assign day = dateString?substring(6, 8)?number>
+        <#return "${day}/${month}/${year}">
+    <#else>
+        <#return "${.now?string['d/M/yyyy']}">
+    </#if>
+</#function>
+
+<#-- Helper function to format date from YYYYMMDD to 'Month YYYY' -->
+<#function formatMonthYear dateString>
+    <#if dateString?has_content && dateString?length == 8>
+        <#assign year = dateString?substring(0, 4)>
+        <#assign monthNum = dateString?substring(4, 6)?number>
+        <#assign monthNames = ["January", "February", "March", "April", "May", "June",
+                               "July", "August", "September", "October", "November", "December"]>
+        <#return "${monthNames[monthNum - 1]} ${year}">
+    <#else>
+        <#return "${.now?string['MMMM yyyy']}">
+    </#if>
+</#function>
+
+{
+"tranid": "${XML["rsm:CrossIndustryInvoice"]["rsm:ExchangedDocument"]["ram:ID"]!''}",
+"trandate": "${formatDate(XML["rsm:CrossIndustryInvoice"]["rsm:ExchangedDocument"]["ram:IssueDateTime"]["udt:DateTimeString"]!'')}",
+"custbody_zeta_receipt_date": "${.now?string["d/M/yyyy"]}",
+"custbody_zeta_netsuite_date": "${.now?string["d/M/yyyy"]}",
+"custbody_zeta_service_period": "${formatMonthYear(XML["rsm:CrossIndustryInvoice"]["rsm:ExchangedDocument"]["ram:IssueDateTime"]["udt:DateTimeString"]!'')}",
+"custbodynatureofservice": "Recurring",
+"custbody42": "Monthly",
+"custbody_zeta_vb_approval_sender": "Accounts Payable",
+"custbody_zeta_ap_reviewer": "Pierce, Phil",
+"custbody_zeta_account_manager": "Pierce, Phil",
+"custbody34": "Goyal, Bharat",
+"custbody_fpa_approver": "Pierce, Phil",
+"custbody_zeta_ap_final_check": "Pierce, Phil",
+"memo": "${(XML["rsm:CrossIndustryInvoice"]["rsm:SupplyChainTradeTransaction"]["ram:ApplicableHeaderTradeAgreement"]["ram:SellerTradeParty"]["ram:Name"]!'Testing E Invoicing')?json_string}",
+"currency": "${XML["rsm:CrossIndustryInvoice"]["rsm:SupplyChainTradeTransaction"]["ram:ApplicableHeaderTradeSettlement"]["ram:InvoiceCurrencyCode"]!'EUR'}",
+"duedate": "${formatDate(XML["rsm:CrossIndustryInvoice"]["rsm:SupplyChainTradeTransaction"]["ram:ApplicableHeaderTradeSettlement"]["ram:SpecifiedTradePaymentTerms"]["ram:DueDateDateTime"]["udt:DateTimeString"]!'')}",
+
+"expense": [
+<#list XML["rsm:CrossIndustryInvoice"]["rsm:SupplyChainTradeTransaction"]["ram:IncludedSupplyChainTradeLineItem"] as expense>
+{
+"amount": "${expense["ram:SpecifiedLineTradeSettlement"]["ram:SpecifiedTradeSettlementLineMonetarySummation"]["ram:LineTotalAmount"]!'0'}",
+"memo": "${(expense["ram:SpecifiedTradeProduct"]["ram:Name"]!'Expense from E-Invoice')?json_string}",
+"taxcode": "6913",
+"class": "21",
+"custcol_cseg_department": "23",
+"department": "2",
+"custcol_cseg_cost_center": "60",
+"custcol3": "13118"
+}<#if expense_has_next>,</#if>
+</#list>
+]
+}

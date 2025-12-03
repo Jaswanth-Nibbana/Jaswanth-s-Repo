@@ -1,0 +1,134 @@
+<rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<rsm:ExchangedDocumentContext>
+		<ram:GuidelineSpecifiedDocumentContextParameter>
+			<ram:ID>urn:cen.eu:en16931:2017</ram:ID>
+		</ram:GuidelineSpecifiedDocumentContextParameter>
+	</rsm:ExchangedDocumentContext>
+	<rsm:ExchangedDocument>
+		<ram:ID>3786290</ram:ID>
+		<ram:TypeCode>380</ram:TypeCode>
+		<ram:IssueDateTime>
+			<udt:DateTimeString format="102">20250603</udt:DateTimeString>
+		</ram:IssueDateTime>
+	</rsm:ExchangedDocument>
+	<rsm:SupplyChainTradeTransaction>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>1</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Software-Abo Vertragsnummer: 376001</ram:Name>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>31.2</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="H87">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:TypeCode>VAT</ram:TypeCode>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>19</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20250601</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20250630</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>31.2</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:ApplicableHeaderTradeAgreement>
+			<ram:BuyerReference>113667</ram:BuyerReference>
+			<ram:SellerTradeParty>
+				<ram:Name>Agenda Informationssysteme GmbH & Co. KG</ram:Name>
+				<ram:DefinedTradeContact>
+					<ram:DepartmentName>Agenda Vertragsmanagement</ram:DepartmentName>
+					<ram:TelephoneUniversalCommunication>
+						<ram:CompleteNumber>+49 8031 2561 0</ram:CompleteNumber>
+					</ram:TelephoneUniversalCommunication>
+					<ram:EmailURIUniversalCommunication>
+						<ram:URIID>info@agenda-software.de</ram:URIID>
+					</ram:EmailURIUniversalCommunication>
+				</ram:DefinedTradeContact>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>83026</ram:PostcodeCode>
+					<ram:LineOne>Oberaustr. 14</ram:LineOne>
+					<ram:CityName>Rosenheim</ram:CityName>
+					<ram:CountryID>DE</ram:CountryID>
+				</ram:PostalTradeAddress>
+				<ram:URIUniversalCommunication>
+					<ram:URIID schemeID="EM">info@agenda-software.de</ram:URIID>
+				</ram:URIUniversalCommunication>
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="VA">DE273480636</ram:ID>
+				</ram:SpecifiedTaxRegistration>
+			</ram:SellerTradeParty>
+			<ram:BuyerTradeParty>
+				<ram:ID>113667</ram:ID>
+				<ram:Name>Zeta Global NV</ram:Name>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>81677</ram:PostcodeCode>
+					<ram:LineOne>Einsteinstr. 174</ram:LineOne>
+					<ram:CityName>München</ram:CityName>
+					<ram:CountryID>DE</ram:CountryID>
+				</ram:PostalTradeAddress>
+				<ram:URIUniversalCommunication>
+					<ram:URIID schemeID="EM">iperkovic@zetaglobal.com</ram:URIID>
+				</ram:URIUniversalCommunication>
+			</ram:BuyerTradeParty>
+		</ram:ApplicableHeaderTradeAgreement>
+		<ram:ApplicableHeaderTradeDelivery/>
+		<ram:ApplicableHeaderTradeSettlement>
+			<ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+			<ram:SpecifiedTradeSettlementPaymentMeans>
+				<ram:TypeCode>58</ram:TypeCode>
+				<ram:PayeePartyCreditorFinancialAccount>
+					<ram:IBANID>DE63 7115 0000 0000 0802 59</ram:IBANID>
+					<ram:AccountName>Agenda GmbH & Co. KG</ram:AccountName>
+				</ram:PayeePartyCreditorFinancialAccount>
+				<ram:PayeeSpecifiedCreditorFinancialInstitution>
+					<ram:BICID>BYLADEM1ROS</ram:BICID>
+				</ram:PayeeSpecifiedCreditorFinancialInstitution>
+			</ram:SpecifiedTradeSettlementPaymentMeans>
+			<ram:ApplicableTradeTax>
+				<ram:CalculatedAmount>5.93</ram:CalculatedAmount>
+				<ram:TypeCode>VAT</ram:TypeCode>
+				<ram:BasisAmount>31.2</ram:BasisAmount>
+				<ram:CategoryCode>S</ram:CategoryCode>
+				<ram:RateApplicablePercent>19</ram:RateApplicablePercent>
+			</ram:ApplicableTradeTax>
+			<ram:BillingSpecifiedPeriod>
+				<ram:StartDateTime>
+					<udt:DateTimeString format="102">20250601</udt:DateTimeString>
+				</ram:StartDateTime>
+				<ram:EndDateTime>
+					<udt:DateTimeString format="102">20250630</udt:DateTimeString>
+				</ram:EndDateTime>
+			</ram:BillingSpecifiedPeriod>
+			<ram:SpecifiedTradePaymentTerms>
+				<ram:Description>Bitte geben Sie immer Ihre Kunden- und Rechnungsnummer an, damit Ihre Zahlung richtig zugeordnet wird. Die Rechnung ist spätestens am 13.06.2025 ohne Abzug fällig. Sparkasse Rosenheim-Bad Aibling IBAN: DE63 7115 0000 0000 0802 59 (BIC: BYLADEM1ROS)</ram:Description>
+				<ram:DueDateDateTime>
+					<udt:DateTimeString format="102">20250613</udt:DateTimeString>
+				</ram:DueDateDateTime>
+			</ram:SpecifiedTradePaymentTerms>
+			<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				<ram:LineTotalAmount>31.2</ram:LineTotalAmount>
+				<ram:TaxBasisTotalAmount>31.2</ram:TaxBasisTotalAmount>
+				<ram:TaxTotalAmount currencyID="EUR">5.93</ram:TaxTotalAmount>
+				<ram:RoundingAmount>0</ram:RoundingAmount>
+				<ram:GrandTotalAmount>37.13</ram:GrandTotalAmount>
+				<ram:TotalPrepaidAmount>0</ram:TotalPrepaidAmount>
+				<ram:DuePayableAmount>37.13</ram:DuePayableAmount>
+			</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+		</ram:ApplicableHeaderTradeSettlement>
+	</rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

@@ -1,0 +1,3998 @@
+<transactionForm scriptid="custform_zeta_vendor_credit" standard="STANDARDVENDORCREDIT">
+  <name>Zeta | Vendor Credit</name>
+  <recordType>VENDORCREDIT</recordType>
+  <inactive>F</inactive>
+  <preferred>T</preferred>
+  <storedWithRecord>T</storedWithRecord>
+  <mainFields>
+    <fieldGroup scriptid="primaryinformation">
+      <label>Primary Information</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+      <fields position="MIDDLE">
+        <field>
+          <id>CUSTOMFORM</id>
+          <label>Custom Form</label>
+          <visible>F</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TRANSACTIONNUMBER</id>
+          <label>Transaction Number</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>ENTITY</id>
+          <label>Vendor</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_external_id]</id>
+          <label>Legacy System (External) ID</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TRANID</id>
+          <label>Credit Memo No.</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>ACCOUNT</id>
+          <label>Account</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TOTAL</id>
+          <label>Amount</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>CREATEDFROM</id>
+          <label>Created From</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>CURRENCY</id>
+          <label>Currency</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>EXCHANGERATE</id>
+          <label>Exchange Rate</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>VATREGNUM</id>
+          <label>Tax ID</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TAXTOTAL</id>
+          <label>Tax</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TAX2TOTAL</id>
+          <label>PST</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>TRANDATE</id>
+          <label>Date</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>POSTINGPERIOD</id>
+          <label>Posting Period</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>MEMO</id>
+          <label>Memo</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_nsts_gaw_tran_requestor]</id>
+          <label>Requestor</label>
+          <visible>F</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_nsts_gaw_is_delegated]</id>
+          <label>Is Delegated</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>DUEDATE</id>
+          <label>Due Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_cretd_by]</id>
+          <label>Created by1</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </fieldGroup>
+    <fieldGroup scriptid="classification">
+      <label>Classification</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+      <fields position="MIDDLE">
+        <field>
+          <id>CLASS</id>
+          <label>Sub-BU</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>SUBSIDIARY</id>
+          <label>Legal Entity</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_cseg_department]</id>
+          <label>Department</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_cseg_cost_center]</id>
+          <label>Cost Center</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </fieldGroup>
+    <fieldGroup scriptid="intercompanymanagement">
+      <label>Intercompany Management</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+    </fieldGroup>
+    <defaultFieldGroup>
+      <fields position="MIDDLE">
+        <field>
+          <id>INTERCOSTATUS</id>
+          <label>Intercompany Status</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_esc_created_date]</id>
+          <label>Created Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>DEPARTMENT</id>
+          <label>Department</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_esc_last_modified_date]</id>
+          <label>Last Modified Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>LOCATION</id>
+          <label>Location</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_2663_reference_num]</id>
+          <label>ACH/EFT Reference No.</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_9997_is_for_ep_eft]</id>
+          <label>For Electronic Bank Payment</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_nsts_gaw_next_approver]</id>
+          <label>Transaction Next Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_nsts_gaw_apprvl_status]</id>
+          <label>Transaction Approval Status</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>EXCLUDEFROMGLNUMBERING</id>
+          <label>Exclude from GL Audit Numbering</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_nsts_gaw_basetotal_debit_amt]</id>
+          <label>Total Debit Amount (Base)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>INTERCOTRANSACTION</id>
+          <label>Paired Intercompany Transaction</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody1]</id>
+          <label>Subject Old</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody4]</id>
+          <label>Terms &amp; Conditions</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody5]</id>
+          <label>Estimated Margin</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody6]</id>
+          <label>Volume</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody7]</id>
+          <label>Platform</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody9]</id>
+          <label>Persuasive Evidence of an Arrangement Exists</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody10]</id>
+          <label>Delivery has Occured or Services have been Rendered</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody11]</id>
+          <label>The Seller's Price to the Buyer is Fixed or Determinable</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody12]</id>
+          <label>Collectibility is Reasonably Assured</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody13]</id>
+          <label>Customer inquiry Email</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody15]</id>
+          <label>Customer Payment Mode</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody16]</id>
+          <label>Approval Status</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_receipt_date]</id>
+          <label>Receipt Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_netsuite_date]</id>
+          <label>Date Entered into NetSuite</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody20]</id>
+          <label>Supporting Documentation</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody21]</id>
+          <label>Proforma Data</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_account_manager]</id>
+          <label>Zeta Account Manager</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody22]</id>
+          <label>Promise to Pay</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody24]</id>
+          <label>AR Category</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody28]</id>
+          <label>Payment Method</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody34]</id>
+          <label>Invoice Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody35]</id>
+          <label>AP Comments</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody36]</id>
+          <label>External ID</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_jrn_reversal_date]</id>
+          <label>Reversal Date (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_jrn_reversal_no]</id>
+          <label>Reversal Number</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_vb_approval_sender]</id>
+          <label>Approval Email Send From</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fpa_approver]</id>
+          <label>FP&amp;A Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_wh_script_processed]</id>
+          <label>WHScriptProcessed</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_ava_shiptousecode]</id>
+          <label>Ship-To Entity/Use Code (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_ava_billtousecode]</id>
+          <label>Bill-To Entity/Use Code</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_ava_invoicemessage]</id>
+          <label>Invoice Messaging</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_ava_is_sellerimporter]</id>
+          <label>Is Seller Importer Of Record</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_currency_symbol]</id>
+          <label>Currency Symbol</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_po_number]</id>
+          <label>PO Number</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_form_id]</id>
+          <label>Form ID</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_11724_pay_bank_fees]</id>
+          <label>Vendor Bank Fees</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_service_period]</id>
+          <label>Service Period</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_ap_reviewer]</id>
+          <label>AP Reviewer</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_ap_final_check]</id>
+          <label>AP Final Check</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_pdf_file]</id>
+          <label>PDF File</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_company]</id>
+          <label>Lease Company (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_contractnum]</id>
+          <label>Lease Contract Number (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_assetdesc]</id>
+          <label>Asset Description (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_startdate]</id>
+          <label>Lease Start Date (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_financelease]</id>
+          <label>Finance Lease</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_assetprop]</id>
+          <label>Asset Proposal</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_asset]</id>
+          <label>Asset (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_totalleasepayment]</id>
+          <label>Total Lease Payment</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_totalnpv]</id>
+          <label>Total NPV</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_totalleaseliab]</id>
+          <label>Total Lease Liability</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_totalinterest]</id>
+          <label>Total Interest</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_totalprincipal]</id>
+          <label>Total Principal</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_fuel_office_location]</id>
+          <label>Fuel Office Location</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_fuel_service_type_inv]</id>
+          <label>Fuel Service Type</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_campaign_id]</id>
+          <label>Campaign ID</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_campaign_name]</id>
+          <label>Campaign Name</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_camp_start_date]</id>
+          <label>Campaign Start Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_camp_end_date]</id>
+          <label>Campaign End Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_advertiser_placiq]</id>
+          <label>Advertiser</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody37]</id>
+          <label>Amount(In Currency)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_collection_status]</id>
+          <label>Invoice Collection Status</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_bill_email_subject]</id>
+          <label>Email Subject</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_cleared_transaction]</id>
+          <label>Cleared Transaction</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_ar_manager]</id>
+          <label>AR Manager</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_final_check_approver]</id>
+          <label>AR Final Check Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_business_cm_app]</id>
+          <label>Business CM Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_business_reason]</id>
+          <label>Business Reason</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_approval_status_cm]</id>
+          <label>Approval Status CM</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_service_start_date]</id>
+          <label>Service Period Start Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_service_end_date]</id>
+          <label>Service Period End Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_shipping_address]</id>
+          <label>Shipping Address</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_po_requestor]</id>
+          <label>PO Requestor</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_rentalfreq]</id>
+          <label>Rental Frequency (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_term]</id>
+          <label>Lease Term (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_annualrate]</id>
+          <label>Annual Interest Rate (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_enddate]</id>
+          <label>Lease End Date (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_fam_lp_journal]</id>
+          <label>Transaction (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_collection_notes]</id>
+          <label>Collection Notes</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_opp_name]</id>
+          <label>Opportunity Name</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_celigo_sfnc_salesforce_id]</id>
+          <label>Salesforce ID</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_category_escalation]</id>
+          <label>Escalation Category</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_verticals]</id>
+          <label>Verticals</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_industry]</id>
+          <label>Industry</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_service_type]</id>
+          <label>Service Type</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_vat_description]</id>
+          <label>VAT Description</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_data_center_bodyfield]</id>
+          <label>Data Center</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_cm_ra_subject]</id>
+          <label>Subject</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_customer_accountmanager]</id>
+          <label>Account Manager</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody38]</id>
+          <label>Get Last Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody39]</id>
+          <label>sourcing from Get Last Approver</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_15699_exclude_from_ep_process]</id>
+          <label>Exclude from Electronic Bank Payments Processing</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_advertiser_id]</id>
+          <label>Advertiser ID</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_4599_sg_import_permit_num]</id>
+          <label>Import Permit No.</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_my_import_declaration_num]</id>
+          <label>Import Declaration No.</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_swe_rma_header_start_date]</id>
+          <label>RMA Header Start Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_end_user]</id>
+          <label>End User (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_order_type]</id>
+          <label>Order Type (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_swe_rma_header_end_date]</id>
+          <label>RMA Header End Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_hrc_vb_softcopy]</id>
+          <label>Vendor Bill Softcopy</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_createdfrom_expensify]</id>
+          <label>Created From (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_memo_for_terms]</id>
+          <label>MEMO FOR TERMS</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_delivery_schedule]</id>
+          <label>DELIVERY SCHEDULE </label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_warranty_]</id>
+          <label>WARRANTY</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_bankeftnumber]</id>
+          <label>Bank Account Number (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_banknumber]</id>
+          <label>Bank Number (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_billdate]</id>
+          <label>Bill Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_billreceiveddate]</id>
+          <label>Bill Received Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_billstatus]</id>
+          <label>Bill Status</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_promisedate]</id>
+          <label>Promise Date</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_cust_priority]</id>
+          <label>Priority (2)</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody40]</id>
+          <label>Created By</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbodynatureofservice]</id>
+          <label>Nature of service</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody42]</id>
+          <label>Frequency</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_supporting_doc]</id>
+          <label>SUPPORTING DOC</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_auto_address]</id>
+          <label>Auto Address</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+        <field>
+          <id>[scriptid=custbody_aprvd_by]</id>
+          <label>Approved By1</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_revenueimpact]</id>
+          <label>Revenue Impact</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_ra_approvalstage]</id>
+          <label>RA Approval Stage</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_ra_newinvoicenumner]</id>
+          <label>New Invoice Number</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_invapprjobtitle]</id>
+          <label>Invoice Approver Job Title</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>INLINETEXT</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custbody_zeta_knock_off_entry]</id>
+          <label>Knock Off Entry</label>
+          <visible>F</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+          <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+        </field>
+      </fields>
+    </defaultFieldGroup>
+  </mainFields>
+  <tabs>
+    <tab>
+      <id>TRANSACTIONITEMS</id>
+      <label>Items</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>UNAPPLIED</id>
+              <label>Unapplied</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>AUTOAPPLY</id>
+              <label>Auto Apply</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>T</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>APPLIED</id>
+              <label>Applied</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_ava_taxinclude]</id>
+              <label>Tax Included (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_ava_taxcredit]</id>
+              <label>Tax Credit</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_ava_taxoverride]</id>
+              <label>Tax Override</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_contract_name]</id>
+              <label>Contract (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEM</id>
+          <neverEmpty>F</neverEmpty>
+          <columns>
+            <column>
+              <id>ITEM</id>
+              <label>Item</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>DISPLAYNAME</id>
+              <label>Display Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>QUANTITY</id>
+              <label>Quantity</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>UNITS</id>
+              <label>Units</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>DESCRIPTION</id>
+              <label>Description</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>RATE</id>
+              <label>Rate</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMOUNT</id>
+              <label>Amount</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAXCODE</id>
+              <label>Tax Code</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAXRATE1</id>
+              <label>Tax Rate</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAXRATE2</id>
+              <label>PST</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAX1AMT</id>
+              <label>Tax Amt</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>GROSSAMT</id>
+              <label>Gross Amt</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_data_center]</id>
+              <label>Suppl ID</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>CLASS</id>
+              <label>Sub-BU</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_cseg_department]</id>
+              <label>Department</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>DEPARTMENT</id>
+              <label>Fin Section</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_cseg_cost_center]</id>
+              <label>Cost Center</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>LOCATION</id>
+              <label>Location</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZATIONSCHED</id>
+              <label>Amort. Schedule</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZSTARTDATE</id>
+              <label>Amort. Start</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZATIONENDDATE</id>
+              <label>Amort. End</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZATIONRESIDUAL</id>
+              <label>Residual</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>GLNUMBER</id>
+              <label>GL #</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>GLSEQUENCE</id>
+              <label>GL Audit Numbering Sequence</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_2663_eft_file_format]</id>
+              <label>EFT File Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9997_dd_file_format]</id>
+              <label>DD File Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_nondeductible_account]</id>
+              <label>Expense Account</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_statistical_value]</id>
+              <label>Statistical Value</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_5892_eutriangulation]</id>
+              <label>EU Triangulation</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_expense_code_of_supply]</id>
+              <label>Code of Supply</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_statistical_procedure_sale]</id>
+              <label>Statistical Procedure for Sales</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_statistical_procedure_purc]</id>
+              <label>Statistical Procedure for Purchases</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_nsts_gaw_col_approver]</id>
+              <label>Sample Column Approver</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol1]</id>
+              <label>Rev Rec Start Date</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol2]</id>
+              <label>Rev Rec End Date</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_emirate]</id>
+              <label>Emirate</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol3]</id>
+              <label>Customer</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol4]</id>
+              <label>Persuasive Evidence of an Arrangement Exists</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol5]</id>
+              <label>Delivery has Occured or Services have been Rendered</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol6]</id>
+              <label>The Seller's Price to the Buyer is Fixed or Determinable</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol7]</id>
+              <label>Collectibility is Reasonably Assured</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol8]</id>
+              <label>Sub-BU Approver</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol9]</id>
+              <label>Display Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_description2]</id>
+              <label>Description 2</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_far_trn_relatedasset]</id>
+              <label>Related Asset</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxbamt_exp]</id>
+              <label>Withholding Tax Base Amount - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxapplies]</id>
+              <label>Apply WH Tax?</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxamt_exp]</id>
+              <label>Withholding Tax Amount - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxline_exp]</id>
+              <label>Withholding Tax Line - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxcode_exp]</id>
+              <label>Withholding Tax Code - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxrate_exp]</id>
+              <label>Withholding Tax Rate - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_shiptousecode]</id>
+              <label>Ship-To Entity/Use Code</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_assetaccount]</id>
+              <label>AssetAccount</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_expenseaccount]</id>
+              <label>ExpenseAccount</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_client_name]</id>
+              <label>Client Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_avatax_rate]</id>
+              <label>Zeta Ava Tax Rate</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_counterparty_vat]</id>
+              <label>Counterparty VAT Number</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_po]</id>
+              <label>Fuel PO#</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_campaignno]</id>
+              <label>Campaign Number</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_campaign_name]</id>
+              <label>Campaign Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_campaign_flight_det]</id>
+              <label>Campaign and Flight Details</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_agency]</id>
+              <label>Fuel Agency</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_advertiser]</id>
+              <label>Fuel Advertiser</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_sales_tax]</id>
+              <label>Sales Tax</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_udf1]</id>
+              <label>UDF1 (2)</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_udf2]</id>
+              <label>UDF2 (2)</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[appid=com.celigo.salesforceio, scriptid=custcol_celigo_sfio_order_id]</id>
+              <label>Salesforce Order Line Id (IO)</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[appid=com.celigo.salesforceio, scriptid=custcol_celigo_sfio_sf_id]</id>
+              <label>Salesforce Opportunity Line Id (IO)</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_celigo_sfnc_line_id]</id>
+              <label>Salesforce Line Id</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_celigo_sfnc_discount_rate]</id>
+              <label>Salesforce Discount Rate</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_celigo_sfnc_discount_item]</id>
+              <label>Salesforce Discount Item</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_sf_product_code]</id>
+              <label>SF Product code</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_eft_entitybank_sub]</id>
+              <label>EFT Entity Bank Subsidiary</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_eft_entitybank_format]</id>
+              <label>EFT Entity Bank Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_dd_entitybank_format]</id>
+              <label>DD Entity Bank Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_dd_entitybank_sub]</id>
+              <label>DD Entity Bank Subsidiary</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_dd_file_format]</id>
+              <label>Direct Debit File Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_item_number]</id>
+              <label>Item Name</label>
+              <visible>F</visible>
+            </column>
+          </columns>
+        </subList>
+        <subList>
+          <id>EXPENSE</id>
+          <neverEmpty>F</neverEmpty>
+          <columns>
+            <column>
+              <id>CATEGORY</id>
+              <label>Category</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>ACCOUNT</id>
+              <label>Account</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMOUNT</id>
+              <label>Amount</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAXCODE</id>
+              <label>Tax Code</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAXRATE1</id>
+              <label>Tax Rate</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAXRATE2</id>
+              <label>PST</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>TAX1AMT</id>
+              <label>Tax Amt</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>GROSSAMT</id>
+              <label>Gross Amt</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>MEMO</id>
+              <label>Memo</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>CLASS</id>
+              <label>Sub-BU</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_data_center]</id>
+              <label>Suppl ID</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_cseg_department]</id>
+              <label>Department</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>DEPARTMENT</id>
+              <label>Fin Section</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_cseg_cost_center]</id>
+              <label>Cost Center</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>LOCATION</id>
+              <label>Location</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZATIONSCHED</id>
+              <label>Amort. Schedule</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZSTARTDATE</id>
+              <label>Amort. Start</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZATIONENDDATE</id>
+              <label>Amort. End</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>AMORTIZATIONRESIDUAL</id>
+              <label>Residual</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_2663_eft_file_format]</id>
+              <label>EFT File Format</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9997_dd_file_format]</id>
+              <label>DD File Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_nondeductible_account]</id>
+              <label>Expense Account</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_statistical_value]</id>
+              <label>Statistical Value</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_5892_eutriangulation]</id>
+              <label>EU Triangulation</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_expense_code_of_supply]</id>
+              <label>Code of Supply</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_statistical_procedure_sale]</id>
+              <label>Statistical Procedure for Sales</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_statistical_procedure_purc]</id>
+              <label>Statistical Procedure for Purchases</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_nsts_gaw_col_approver]</id>
+              <label>Sample Column Approver</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol1]</id>
+              <label>Rev Rec Start Date</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol2]</id>
+              <label>Rev Rec End Date</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_emirate]</id>
+              <label>Emirate</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol3]</id>
+              <label>Customer</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol4]</id>
+              <label>Persuasive Evidence of an Arrangement Exists</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol5]</id>
+              <label>Delivery has Occured or Services have been Rendered</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol6]</id>
+              <label>The Seller's Price to the Buyer is Fixed or Determinable</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol7]</id>
+              <label>Collectibility is Reasonably Assured</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol8]</id>
+              <label>Sub-BU Approver</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol9]</id>
+              <label>Display Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_description2]</id>
+              <label>Description 2</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_far_trn_relatedasset]</id>
+              <label>Related Asset</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxbamt_exp]</id>
+              <label>Withholding Tax Base Amount - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxapplies]</id>
+              <label>Apply WH Tax?</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxamt_exp]</id>
+              <label>Withholding Tax Amount - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxline_exp]</id>
+              <label>Withholding Tax Line - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxcode_exp]</id>
+              <label>Withholding Tax Code - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_4601_witaxrate_exp]</id>
+              <label>Withholding Tax Rate - Expense</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_shiptousecode]</id>
+              <label>Ship-To Entity/Use Code</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_assetaccount]</id>
+              <label>AssetAccount</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_expenseaccount]</id>
+              <label>ExpenseAccount</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_client_name]</id>
+              <label>Client Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_avatax_rate]</id>
+              <label>Zeta Ava Tax Rate</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_counterparty_vat]</id>
+              <label>Counterparty VAT Number</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_po]</id>
+              <label>Fuel PO#</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_campaignno]</id>
+              <label>Campaign Number</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_campaign_name]</id>
+              <label>Campaign Name</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_campaign_flight_det]</id>
+              <label>Campaign and Flight Details</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_agency]</id>
+              <label>Fuel Agency</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_fuel_advertiser]</id>
+              <label>Fuel Advertiser</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_zeta_sales_tax]</id>
+              <label>Sales Tax</label>
+              <visible>T</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_udf1]</id>
+              <label>UDF1 (2)</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_ava_udf2]</id>
+              <label>UDF2 (2)</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[appid=com.celigo.salesforceio, scriptid=custcol_celigo_sfio_order_id]</id>
+              <label>Salesforce Order Line Id (IO)</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[appid=com.celigo.salesforceio, scriptid=custcol_celigo_sfio_sf_id]</id>
+              <label>Salesforce Opportunity Line Id (IO)</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_celigo_sfnc_line_id]</id>
+              <label>Salesforce Line Id</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_celigo_sfnc_discount_rate]</id>
+              <label>Salesforce Discount Rate</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_celigo_sfnc_discount_item]</id>
+              <label>Salesforce Discount Item</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_sf_product_code]</id>
+              <label>SF Product code</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_eft_entitybank_sub]</id>
+              <label>EFT Entity Bank Subsidiary</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_eft_entitybank_format]</id>
+              <label>EFT Entity Bank Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_dd_entitybank_format]</id>
+              <label>DD Entity Bank Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_dd_entitybank_sub]</id>
+              <label>DD Entity Bank Subsidiary</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_9572_dd_file_format]</id>
+              <label>Direct Debit File Format</label>
+              <visible>F</visible>
+            </column>
+            <column>
+              <id>[scriptid=custcol_item_number]</id>
+              <label>Item Name</label>
+              <visible>F</visible>
+            </column>
+          </columns>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>TRANSACTIONBILLING</id>
+      <label>Billing</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>BILLADDRESS</id>
+              <label>Vendor</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>BILLADDRESSLIST</id>
+              <label>Vendor Select</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>INCOTERM</id>
+              <label>Incoterm</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>TERMS</id>
+              <label>Terms</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_stc_amount_after_discount]</id>
+              <label>Amount after discount</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_stc_tax_after_discount]</id>
+              <label>Tax after discount</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_stc_total_after_discount]</id>
+              <label>Total after discount</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody27]</id>
+              <label>Created From</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody29]</id>
+              <label>Process</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody30]</id>
+              <label>Created From (SO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_net_terms]</id>
+              <label>Net Terms Days</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>TRANSACTIONRELATIONSHIPS</id>
+      <label>Relationships</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>CRMCONTACTS</id>
+          <label>Contacts</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>TRANSACTIONCOMMUNICATION</id>
+      <label>Communication</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <fieldGroup scriptid="printing">
+          <label>Printing</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>TOBEPRINTED</id>
+              <label>To Be Printed</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+          </fields>
+        </fieldGroup>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody17]</id>
+              <label>Billing Email Addresses (CC)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody18]</id>
+              <label>Primary Sales Rep Email Address (BCC)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_reject_email_sent]</id>
+              <label>Reject Email Sent</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_fuel_ar_user_notes]</id>
+              <label>A/R User Notes</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_last_email_sent]</id>
+              <label>Zeta Last Email Sent</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_billaddrccemail]</id>
+              <label>Bill Address CC Email</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+          <fields position="BOTTOM">
+            <field>
+              <id>[scriptid=custbody_approval_email_sent]</id>
+              <label>Approval Email Sent</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>MESSAGES</id>
+          <label>Messages</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ACTIVITIES</id>
+          <label>Activities</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>EVENTS</id>
+          <label>Events</label>
+          <visible>F</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>TASKS</id>
+          <label>Tasks</label>
+          <visible>F</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>CALLS</id>
+          <label>Phone Calls</label>
+          <visible>F</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>MEDIAITEM</id>
+          <label>Files</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>USERNOTES</id>
+          <label>User Notes</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>TRANSACTIONRELATEDRECORDS</id>
+      <label>Related Records</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>TRANSACTIONSYSTEMINFORMATION</id>
+      <label>System Information</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody25]</id>
+              <label>Due Status</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody26]</id>
+              <label>Aging</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody43]</id>
+              <label>Group Currency</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+          <fields position="BOTTOM">
+            <field>
+              <id>[scriptid=custbody_zeta_posting_period]</id>
+              <label>Posting Period</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>SYSTEMNOTES</id>
+          <label>System Notes</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ACTIVEWORKFLOWS</id>
+          <label>Active Workflows</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>WORKFLOWHISTORY</id>
+          <label>Workflow History</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>CUSTOM</id>
+      <label>Custom</label>
+      <visible>F</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_total_debit_amt]</id>
+              <label>Total Debit Amount</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_next_approvers]</id>
+              <label>Next Approver/s</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_next_role_approvers]</id>
+              <label>Next Role Approver</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_rejection_reason]</id>
+              <label>Rejection Reason</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_new_vendor_add]</id>
+              <label>New Vendor Add</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_export_count]</id>
+              <label>Celigo Export Count</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_adp_id]</id>
+              <label>ADP ID (3)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_je_chunk_id]</id>
+              <label>ADP CHUNK ID</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_cam_t_transaction]</id>
+              <label>Celigo CashApp Transaction</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_if_id]</id>
+              <label>Salesforce Item Fulfillment Id (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_order_id]</id>
+              <label>Salesforce Order ID(IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_send_so_to_oppty]</id>
+              <label>Send Order as Salesforce Opportunity (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_send_so_to_order]</id>
+              <label>Send Order as Salesforce Order (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_sf_id]</id>
+              <label>Salesforce Opportunity Id (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_sf_originated_ord]</id>
+              <label>Salesforce Originated Order (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_sf_pricebook_id]</id>
+              <label>Salesforce Pricebook Id (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_skip_export_to_sf]</id>
+              <label>Skip Export to Salesforce Order (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_skip_exprt_to_opp]</id>
+              <label>Skip Export to Salesforce Opportunity (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_test_mode_record]</id>
+              <label>Send as test record to IO</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_opportunity_contact_email]</id>
+              <label>Opportunity Contact Email</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_opportunity_contact]</id>
+              <label>Opportunity Contact</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_opp_zeta_id]</id>
+              <label>SFDC Zeta ID</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_sfdc_advertiser]</id>
+              <label>SFDC Advertiser</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_incremental_order]</id>
+              <label>Incremental IO#</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_sfnc_tran_term_in_months]</id>
+              <label>Salesforce Term In Months</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_sfnc_salesforce_id_2]</id>
+              <label>Salesforce Id (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_end_usr_swp_fld]</id>
+              <label>Celigo End User Swap Field[CR]</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_sfnc_send_to_sfdc]</id>
+              <label>Send To Salesforce</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_sfnc_salesforce_qot_id]</id>
+              <label>Salesforce Quote Id</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_sfnc_export_order]</id>
+              <label>Send Sales Order To Salesforce</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_celigo_sfnc_sf_order_id]</id>
+              <label>Salesforce Order Id</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_specdeprjrn_rate]</id>
+              <label>Rate (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_specdeprjrn_limit]</id>
+              <label>Limit (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_specdeprjrn_term1]</id>
+              <label>Applied Term 1 (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_specdeprjrn_term2]</id>
+              <label>Applied Term 2 (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_specdeprjrn_shortage]</id>
+              <label>Shortage</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_quote_id]</id>
+              <label>Salesforce Quote Id (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.celigo.salesforceio, scriptid=custbody_celigo_sfio_skip_exprt_to_qot]</id>
+              <label>Skip Export to Salesforce Quote (IO)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_je_memo_update]</id>
+              <label>JE memo Update</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_je_customer_update]</id>
+              <label>JE Customer Update</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_bpc_approver_1]</id>
+              <label>Approver 1</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_bpc_approver_2]</id>
+              <label>Approver 2</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_bpc_approver_3]</id>
+              <label>Approver 3</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_managed_bundle]</id>
+              <label>Managed Bundle</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_iit_import_jv]</id>
+              <label>Import Journal Entry</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_iit_place_of_service]</id>
+              <label>Place Of Service</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_iit_advance_tds_paid]</id>
+              <label>Advance TDS Paid</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_iit_advtds_applied_amt]</id>
+              <label>Applied Amount (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody18_2]</id>
+              <label>Assy Dept</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nc_ib_lastemaildate]</id>
+              <label>Last mail sent on</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_modifiedby]</id>
+              <label>Modified By</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody44]</id>
+              <label>AR Manager comments</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody45]</id>
+              <label>ORIGINAL INV NUMBER</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_approvalnotes]</id>
+              <label>Approval Notes</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>GLIMPACTTAB</id>
+      <label>GL Impact</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>GLIMPACTCHANGES</id>
+          <label>GL Impact Changes</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_9_4533432_230]</id>
+      <label>EFT</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody_9997_pfa_record]</id>
+              <label>PFA Record</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_11187_pref_entity_bank]</id>
+              <label>Preferred Entity Bank</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_11724_bank_fee]</id>
+              <label>Bank Fee</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_15529_vendor_entity_bank]</id>
+              <label>Entity Bank (Vendor)</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_15529_emp_entity_bank]</id>
+              <label>Entity Bank (Employee)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_10184_customer_entity_bank]</id>
+              <label>Entity Bank (Customer)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_15889_cust_refund_entity_bank]</id>
+              <label>Entity Bank (Customer Credit)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_16_3776644_208]</id>
+      <label>Tax Reporting</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody_adjustment_journal]</id>
+              <label>Adjustment Journal</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_transaction_region]</id>
+              <label>Region of Origin</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nondeductible_ref_tran]</id>
+              <label>Transactions with Non-Deductible Tax</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_delivery_terms]</id>
+              <label>Delivery Terms</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_notc]</id>
+              <label>Nature of Transaction Code</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_4110_customregnum]</id>
+              <label>Customs Registration Number</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nondeductible_ref_genjrnl]</id>
+              <label>Non-Deductible Adjustment Journal</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nondeductible_processed]</id>
+              <label>Non-Deductible Tax Adjusted</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_mode_of_transport]</id>
+              <label>Mode of Transport</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_regime_code_of_supply]</id>
+              <label>Regime Code of Supply</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_cash_register]</id>
+              <label>Cash Register</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_date_of_taxable_supply]</id>
+              <label>Date of Taxable Supply</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_itr_doc_number]</id>
+              <label>Document Number</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_refno_originvoice]</id>
+              <label>Reference No. of Original Invoice</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nexus_notc]</id>
+              <label>Nexus NOTC</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_counterparty_vat]</id>
+              <label>Counterparty VAT Number (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_28_3956802_208]</id>
+      <label>Dunning</label>
+      <visible>F</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody31]</id>
+              <label>1st Dunning Date</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody32]</id>
+              <label>2nd Dunning Date</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody33]</id>
+              <label>Customer Agree for Payment or Settlement</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subTab>
+          <id>[scriptid=custtab_32_3956802_208]</id>
+          <label>Setup</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup>
+              <fields position="MIDDLE">
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_paused]</id>
+                  <label>Pause Dunning</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                  <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_status]</id>
+                  <label>Dunning Pause Reason</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_letters_toemail]</id>
+                  <label>Allow Letters to be Emailed</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                  <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_substatus]</id>
+                  <label>Dunning Pause Reason Detail</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_procedure]</id>
+                  <label>Dunning Procedure</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_last_dunning_letter_sent]</id>
+                  <label>Last Email Sent</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>DISABLED</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_letters_toprint]</id>
+                  <label>Allow Letters to be Printed</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                  <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_manager]</id>
+                  <label>Dunning Manager</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+                <field>
+                  <id>[scriptid=custbody_3805_dunning_level]</id>
+                  <label>Dunning Level</label>
+                  <visible>F</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>DISABLED</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+              </fields>
+            </defaultFieldGroup>
+          </fieldGroups>
+          <subLists/>
+        </subTab>
+        <subTab>
+          <id>[scriptid=custtab_31_3956802_208]</id>
+          <label>Log</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup/>
+          </fieldGroups>
+          <subLists/>
+        </subTab>
+        <subTab>
+          <id>[scriptid=custtab_30_3956802_208]</id>
+          <label>Files</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup/>
+          </fieldGroups>
+          <subLists/>
+        </subTab>
+      </subItems>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_49_t1221897_664]</id>
+      <label>Approver List</label>
+      <visible>F</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_created_by]</id>
+              <label>Created by:</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_superapp_approved]</id>
+              <label>Super Approver Approved</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_nsts_gaw_trans_org_amt]</id>
+              <label>Transaction Original Amount</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_po_approved_by]</id>
+              <label>Last Approved By</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_vb_next_approver]</id>
+              <label>Bill Next Approver</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_script_field_vba]</id>
+              <label>Script Field VBA</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_prior_approvers]</id>
+              <label>Prior Approvers</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_approved_by]</id>
+              <label>Approved By</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_po_internalid]</id>
+              <label>PO Internal ID</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_email_reminder]</id>
+              <label>Email Remider</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+              <checkBoxDefault>USE_FIELD_DEFAULT</checkBoxDefault>
+            </field>
+            <field>
+              <id>[scriptid=custbody_date_reminder]</id>
+              <label>Date Reminder</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_zeta_email_followups]</id>
+              <label>Email followups for Approver</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>INLINETEXT</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_31_5435884_159]</id>
+      <label>Posting Reference</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody_fam_lp_rightofuse]</id>
+              <label>Right-of-Use Asset</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_lp_leaseliability]</id>
+              <label>Lease Liability</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_lp_intexpense]</id>
+              <label>Interest Expense</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_fam_lp_gainonmod]</id>
+              <label>Gain (Loss) on Modification</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_8_4237371_230]</id>
+      <label>Contract Items</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_7_4237371_230]</id>
+      <label>Channel</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody_distributor]</id>
+              <label>Distributor (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custbody_reseller]</id>
+              <label>Reseller (2)</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_211_t1440478_793]</id>
+      <label>Schedule</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custbody19]</id>
+              <label>Machine Shop</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>MULTIBOOK</id>
+      <label>Accounting Books</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+  </tabs>
+  <actionbar>
+    <buttons>
+      <button>
+        <id>RECALC</id>
+        <label>Recalc</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>VIEWEXPENSEPLANS</id>
+        <label>View Expense Plans</label>
+        <visible>T</visible>
+      </button>
+    </buttons>
+    <menu>
+      <menuitem>
+        <id>DELETE</id>
+        <label>Delete</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>GLIMPACT</id>
+        <label>GL Impact</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>GOTOREGISTER</id>
+        <label>Go To Register</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>NEW</id>
+        <label>New</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>PRINT</id>
+        <label>Print</label>
+        <visible>F</visible>
+      </menuitem>
+      <menuitem>
+        <id>PRINTGLIMPACT</id>
+        <label>Print GL Impact</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>SUBMITCOPY</id>
+        <label>Save &amp; Copy</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>SUBMITNEW</id>
+        <label>Save &amp; New</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>ACTIVITYHISTORY</id>
+        <label>Show Activity</label>
+        <visible>T</visible>
+      </menuitem>
+    </menu>
+  </actionbar>
+  <allowAddMultiple>T</allowAddMultiple>
+  <emailMessageTemplate>USE_DEFAULT</emailMessageTemplate>
+  <printingType>
+    <advanced>
+      <printTemplate>STDTMPLSVENDCRED</printTemplate>
+      <emailTemplate>STDTMPLSVENDCRED</emailTemplate>
+    </advanced>
+  </printingType>
+  <roles>
+    <role>
+      <id>ADMINISTRATOR</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_celigo_io_fullaccess_wo2fa]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1002]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_ep_approver]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_ep_configurator]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_ep_processor]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>FULL_ACCESS</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1000]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1001]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1004]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1002_2]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_tesorio]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_wtax_accountant]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_wtax_accountat_rvwr]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_wtax_bookkeeper]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_wtax_cfo]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1016_4]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1033_0]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1041_2]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1066_3]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1048_2]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_zeta_accountant]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1035_2]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1051_1]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1052_2]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_zeta_fpa]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole_zeta_fixed_assets_mgmt]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1070]</id>
+      <preferred>F</preferred>
+    </role>
+    <role>
+      <id>[scriptid=customrole1042_2]</id>
+      <preferred>F</preferred>
+    </role>
+  </roles>
+</transactionForm>
